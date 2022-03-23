@@ -9,9 +9,9 @@
 :root{
 --cor0: white;
 --cor1: black;
---cor2: #4696EB;
---cor3: #4563F5;
---cor4: #6551DB;
+--cor2: #ff0d0d;
+--cor3: #e40707b2;
+--cor4: rgba(255, 255, 255, 0.74);
 --cor5: #9C4EF2;
 --font0: sans-serif; /*Padrão para textos*/
 --font1: 'Dancing Script', cursive; /*Letra serifada de escrita a mão*/
@@ -27,17 +27,18 @@
     p::first-letter{margin-left: 20px; font-size: 1.5em;}
 
 
-body{background-image: linear-gradient(180deg, var(--cor5), var(--cor4),var(--cor3), var(--cor2)); background-attachment: fixed;}
+body{background-image: linear-gradient(180deg, var(--cor2), var(--cor0)); background-attachment: fixed;}
+
 
 /*HEADER*/ 
-header{background-color: rgba(255, 255, 255, 0.13); padding: 25px; text-align: center;}
+header{background-color: rgba(255, 255, 255, 0.13); padding: 25px; text-align: center; align-items: center;}
 header h1{color: var(--cor1); font-size: 50px; font-family: var(--font3);}
 header p{font-family: var(--font2); font-size: 20px;}
 
 /*NAV*/
 nav{background-color: rgba(255, 255, 255, 0.13); font-family: var(--font3); box-shadow: 1px 1px 1px black;}
 nav .container{display: flex; flex-direction: row; }
-nav a{padding: 10px; color: white;}
+nav a{padding: 10px; color: rgb(0, 0, 0);}
 @media (max-width: 500px){nav .container{flex-direction:column;}}
 
 /*MAIN*/
@@ -54,26 +55,16 @@ article h1{font-family: var(--font3); font-size: 20px;}
 article h2{font-family: var(--font3); font-size: 20px;}
 article p{padding-top: 10px; font-size: 0.9em; font-family: var(--font3); line-height: 30px; text-align: justify;}
 @media(max-width:950px){article{max-width: 90%;}}
+@media(max-width:950px){img{width: 250px;}}
 
-
-/*FOOTER*/
-footer{background-color: var(--cor2); color: white; text-align: center; height: 30px; padding: 10px;}
 
 /*ID*/
-#map{display: flex; justify-content: center; margin: 30px;}
-#trajetoria-footer{margin-top: 10%;}
-#contato article{max-width: 70%;display: flex; flex-direction: row; margin-left: 15%; align-items: center;}
-@media(max-width:800px){#contato article{flex-direction: column;} #contato div{margin-bottom: 20px;}}
-#contato div{margin: 20px;}
+#logocin{max-width: 200px} #logocin h2{font-size: 0.8em;} #logocin img{width: 40px;} #logocin p{text-align: center;}
+@media(max-width:950){#logocin{max-width: 100px} #logocin h2{font-size: 0.8em;} #logocin img{width: 40px;} #logocin p{text-align: center;}}
 
 /*CLASS*/
 .imagem-redonda{border-radius: 50%;}
 .video{display: flex; width: 100%; height: 100%; justify-content: center;}
-.flip-container{width: 400px; height: 400px; perspective: 1000px; align-items: center;}
-.flipper{  width: 100%; height: 100%; transition: 0.8s; transform-style: preserve-3d; position: relative; text-align: center; color: white;}
-.flip-container:hover .flipper{transform: rotateY(180deg);/* se quiser uma animação na vertical, troque por rotateX(180deg)*/}
 .front, .back{width: 100%; height: 100%; position: absolute; backface-visibility: hidden;}
-.back{transform: rotateY(180deg); margin-top: 20%;}
 .front {font-size: 5rem; margin-top: 30%;}
-.trajetoria {margin-top: 10%;}
-.logo{max-width: 100px} .logo h2{font-size: 0.8em;} .logo img{width: 40px;} .logo p{text-align: center;}
+.logo{max-width: 80px} .logo h2{font-size: 0.8em;} .logo img{width: 40px;} .logo p{text-align: center;}
