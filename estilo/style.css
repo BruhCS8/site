@@ -45,7 +45,7 @@ main{padding: 30px;}
 main .container{display: flex; justify-content:space-around; font-size: 1.1em; font-family: var(--font3); line-height: 30px; text-align: justify;  flex-flow: row nowrap ;}
 main .container article{margin: 50px; max-width: 350px;}
 main article{margin-left: 15%;}
-@media(max-width:950px){main .container{flex-flow: column; align-items: center; font-size: 0.8em;}
+@media(max-width:1000px){main .container{flex-flow: column; align-items: center; font-size: 0.8em;}
 main article{margin-left: 5%;}}
 
 /*ARTICLE*/
@@ -62,9 +62,6 @@ footer{background-color: var(--cor2); color: white; text-align: center; height: 
 /*ID*/
 #map{display: flex; justify-content: center; margin: 30px;}
 #trajetoria-footer{margin-top: 10%;}
-#contato article{max-width: 70%;display: flex; flex-direction: row; margin-left: 15%; align-items: center;}
-@media(max-width:800px){#contato article{flex-direction: column;} #contato div{margin-bottom: 20px;}}
-#contato div{margin: 20px;}
 
 /*CLASS*/
 .imagem-redonda{border-radius: 50%;}
