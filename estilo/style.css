@@ -43,10 +43,10 @@ nav a{padding: 10px; color: white;}
 /*MAIN*/
 main{padding: 30px;}
 main .container{display: flex; justify-content:space-around; font-size: 1.1em; font-family: var(--font3); line-height: 30px; text-align: justify;  flex-flow: row nowrap ;}
-main .container article{margin: 50px; max-width: 350px;}
+main .container article{margin: 5%; max-width: 300px;}
 main article{margin-left: 15%;}
-@media(max-width:1000px){main .container{flex-flow: column; align-items: center; font-size: 0.8em;}
-@media(max-width:1000px){main article{margin: 3%;}}
+@media(max-width:1000px){main .container{flex-flow: column; align-items: center; font-size: 0.8em; margin: 10%; }
+main article{margin: 3%;}}
 
 /*ARTICLE*/
 article{background-color: white; border-radius: 20px; padding: 10px; margin-top: 20px; text-align: center; box-shadow: 2px 2px 1px black; max-width: 70%;}
