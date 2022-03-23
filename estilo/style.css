@@ -74,3 +74,4 @@ footer{background-color: var(--cor2); color: white; text-align: center; height: 
 .front {font-size: 5rem; margin-top: 30%;}
 .trajetoria {margin-top: 10%;}
 .logo{max-width: 100px} .logo h2{font-size: 0.8em;} .logo img{width: 40px;} .logo p{text-align: center;}
+.texto_flip{text-align: justify;}
